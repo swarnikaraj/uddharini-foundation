@@ -25,23 +25,23 @@ const RescueStoriesSection = () => {
   ];
 
   // Instagram post IDs array
-  const instagramPosts = [
-    {
-      id: "post_id_1",
-      title: "Instagram Story 1",
-      description: "Description of Instagram story 1",
-    },
-    {
-      id: "post_id_2",
-      title: "Instagram Story 2",
-      description: "Description of Instagram story 2",
-    },
-    {
-      id: "post_id_3",
-      title: "Instagram Story 3",
-      description: "Description of Instagram story 3",
-    },
-  ];
+  //   const instagramPosts = [
+  //     {
+  //       id: "post_id_1",
+  //       title: "Instagram Story 1",
+  //       description: "Description of Instagram story 1",
+  //     },
+  //     {
+  //       id: "post_id_2",
+  //       title: "Instagram Story 2",
+  //       description: "Description of Instagram story 2",
+  //     },
+  //     {
+  //       id: "post_id_3",
+  //       title: "Instagram Story 3",
+  //       description: "Description of Instagram story 3",
+  //     },
+  //   ];
 
   return (
     <div id="rescue-stories" className="bg-gray-50 py-16 sm:py-24">
@@ -112,7 +112,7 @@ const RescueStoriesSection = () => {
         </div>
 
         {/* Instagram Section */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-2xl font-semibold text-green-700 mb-8">
             Instagram
           </h3>
@@ -138,32 +138,33 @@ const RescueStoriesSection = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <a
-              href="https://www.instagram.com/uddharini_foundation?igsh=ZDU2MjY2cG05am5n&utm_source=qr" // Replace with your Instagram profile URL
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 text-white bg-pink-600 hover:bg-pink-700 rounded-md shadow-md text-lg font-medium"
+          </div> */}
+
+        <div className="text-center mt-8">
+          <a
+            href="https://www.instagram.com/uddharini_foundation?igsh=ZDU2MjY2cG05am5n&utm_source=qr" // Replace with your Instagram profile URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 text-white bg-pink-600 hover:bg-pink-700 rounded-md shadow-md text-lg font-medium"
+          >
+            <span>Follow Us on Instagram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 ml-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              <span>Follow Us on Instagram</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-2"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a>
-          </div>
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 
