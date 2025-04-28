@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const ActivitySection = () => {
   return (
     <div id="activities" className="bg-gray-50 py-16 sm:py-24">
@@ -13,23 +14,25 @@ const ActivitySection = () => {
         {/* Current Activity */}
         <div className="mt-12 bg-white rounded-lg shadow-lg p-6">
           <h3 className="text-2xl font-semibold text-green-800">
-            Current Activity: Water Pots for Animals in Bihar
+            Current Activity: Water Pots & Reflective Collars Distribution in
+            Bihar, Ara
           </h3>
           <div className="mt-6 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8">
             {/* Flyer */}
             <Image
               width={400}
               height={600}
-              src="/1.png"
-              alt="Water Pots for Animals Flyer"
+              src="/1.png" // Make sure to update with the new event's image
+              alt="Water Pots and Reflective Collars Distribution Flyer"
               className="w-full lg:w-1/2 rounded-lg shadow-md"
             />
             {/* Text and Donation Link */}
             <div className="mt-6 lg:mt-0">
               <p className="text-gray-600">
-                We are working to provide water pots for animals in Bihar to
-                ensure they have access to clean drinking water during the
-                summer. Your support can make a big difference in their lives.
+                Join us on April 17-18 in Ara, Bihar for our initiative to
+                distribute water pots for animals and reflective collars. This
+                effort aims to ensure animals have access to water during summer
+                and stay safe at night with reflective collars.
               </p>
               <div className="mt-4">
                 <div>
@@ -53,22 +56,23 @@ const ActivitySection = () => {
           </div>
         </div>
 
-        {/* Upcoming Events */}
+        {/* Past Events */}
         <div className="mt-12 bg-white rounded-lg shadow-lg p-6">
           <h3 className="text-2xl font-semibold text-green-800">
-            Upcoming Events: Awareness Programs in Patna Schools
+            Recent Event: School Awareness Programs in Patna
           </h3>
           <p className="mt-4 text-gray-600">
-            From <strong>22nd to 30th April</strong>, we will be conducting
-            awareness programs in schools across Patna to educate students about
-            animal welfare and environmental sustainability.
+            We successfully conducted awareness programs in schools across
+            Patna, educating students about animal welfare and environmental
+            sustainability. Thank you to all volunteers and participants who
+            made this event a success!
           </p>
           <div className="mt-4">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScLRKri-qIyzMBJl8XT9WSM6q1kvTCMlakxgQYqvTVEoD79lA/viewform?usp=sharing"
+              href="#gallery" // You might want to update this link to show event photos
               className="px-6 py-3 text-green-700 bg-white hover:bg-gray-100 rounded-md shadow-md text-lg font-medium"
             >
-              Volunteer for the Event
+              View Event Gallery
             </a>
           </div>
         </div>
