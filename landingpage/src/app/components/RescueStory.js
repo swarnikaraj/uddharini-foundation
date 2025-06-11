@@ -115,56 +115,28 @@ const RescueStoriesSection = () => {
         </div>
 
         {/* Instagram Section */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-green-700 mb-8">
-            Instagram
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {instagramPosts.map((post, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div className="aspect-w-1 aspect-h-1">
-                  <iframe
-                    src={`https://www.instagram.com/p/${post.id}/embed`}
-                    title={post.title}
-                    frameBorder="0"
-                    scrolling="no"
-                    allowTransparency="true"
-                    className="w-full"
-                  ></iframe>
-                </div>
-                <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">{post.title}</h4>
-                  <p className="text-sm text-gray-600">{post.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
 
-          <div className="text-center mt-8">
-            <a
-              href="https://www.instagram.com/uddharini_foundation?igsh=ZDU2MjY2cG05am5n&utm_source=qr" // Replace with your Instagram profile URL
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 text-white bg-pink-600 hover:bg-pink-700 rounded-md shadow-md text-lg font-medium"
+        <div className="text-center mt-8">
+          <a
+            href="https://www.instagram.com/_uddharini_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 text-white bg-pink-600 hover:bg-pink-700 rounded-md shadow-md text-lg font-medium"
+          >
+            <span>Follow Us on Instagram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 ml-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              <span>Follow Us on Instagram</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-2"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a>
-          </div>
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </div>

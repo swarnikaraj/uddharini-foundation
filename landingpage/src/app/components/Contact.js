@@ -46,7 +46,7 @@ const ContactSection = () => {
                 <FaYoutube className="text-2xl" />
               </a>
               <a
-                href="https://www.instagram.com/uddharini_foundation?igsh=ZDU2MjY2cG05am5n&utm_source=qr"
+                href="https://www.instagram.com/_uddharini_"
                 className="text-pink-600 hover:text-pink-700"
               >
                 <FaInstagram className="text-2xl" />
