@@ -18,7 +18,7 @@ export default function Home() {
       <LevelRoadmap />
       {/* <DonateSection /> */}
       <ActivitySection />
-      <ImpactSection />
+      {/* <ImpactSection /> */}
       {/* <Gallery /> */}
       <ContactSection />
     </div>
