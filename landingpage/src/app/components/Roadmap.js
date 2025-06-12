@@ -168,9 +168,12 @@ const SnakeRoadmap = () => {
 
         {/* Call to action */}
         <div className="mt-12">
-          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <a
+            href="https://chat.whatsapp.com/J6TG4SQiLqqJdeIen830lg"
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+          >
             Start Your Journey
-          </button>
+          </a>
         </div>
       </div>
     </section>

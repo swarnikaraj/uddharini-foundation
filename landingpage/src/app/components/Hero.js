@@ -125,7 +125,9 @@ const HeroSection = () => {
         <div className="quick-actions">
           <div className="quick-action">
             <FaHandsHelping className="text-green-600" />
-            <span>Volunteer</span>
+            <a href="https://chat.whatsapp.com/DOrq85zbkpND7udcX3lOdT">
+              <span>Volunteer</span>
+            </a>
           </div>
         </div>
       </div>
