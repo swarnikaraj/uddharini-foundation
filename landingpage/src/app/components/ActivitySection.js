@@ -97,7 +97,7 @@ const ActivitySection = () => {
           <div className="flex justify-center items-center gap-8 mt-8 flex-wrap">
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border-2 border-blue-100">
               <FaUsers className="text-blue-500" />
-              <span className="font-bold text-blue-700">1000+ Volunteers</span>
+              <span className="font-bold text-blue-700">30+ Volunteers</span>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border-2 border-green-100">
               <FaGlobe className="text-green-500" />
