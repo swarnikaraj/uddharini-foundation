@@ -37,12 +37,12 @@ const Header = () => {
             <a href="#volunteer" className="text-gray-600 hover:text-green-600">
               Volunteer
             </a>
-            <a
+            {/* <a
               href="#donate"
               className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
             >
               Donate
-            </a>
+            </a> */}
           </div>
           {/* Mobile menu button */}
           <div className="sm:hidden flex items-center">

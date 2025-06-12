@@ -12,11 +12,10 @@ export default function Home() {
       <Header />
       <HeroSection />
       <MissionSection />
+
+      <RescueStoriesSection />
       <ActivitySection />
       <ImpactSection />
-
-      {/* <DonateSection /> */}
-      {/* <RescueStoriesSection /> */}
       <ContactSection />
     </div>
   );
