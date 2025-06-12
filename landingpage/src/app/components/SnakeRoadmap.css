@@ -1,0 +1,100 @@
+/* Snake path animation */
+.snake-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 8s ease-in-out;
+}
+
+.snake-path.animate {
+  stroke-dashoffset: 0;
+}
+
+/* Snake head animation */
+.snake-head {
+  opacity: 0;
+  transform-origin: center;
+}
+
+.snake-head.animate {
+  opacity: 1;
+  animation: snakeHeadPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes snakeHeadPulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Level cards */
+.level-card {
+  opacity: 0;
+  transform: scale(0.8) translateY(20px);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 10;
+}
+
+.level-card.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.level-badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  z-index: 20;
+}
+
+.level-content {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d1fae5;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.level-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: #10b981;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .level-content {
+    width: 240px;
+    padding: 20px;
+  }
+  
+  .level-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .level-content {
+    width: 200px;
+    padding: 16px;
+  }
+}
