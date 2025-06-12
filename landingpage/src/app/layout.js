@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Uddharini",
   description:
-    "Didicated for the welfare of voiceless , nurture sustainability and build world rooted in compasssion",
+    "Committed to the liberation of animals, the defense of sentient life, and the cultivation of a compassionate, sustainable world.",
 };
 
 export default function RootLayout({ children }) {
