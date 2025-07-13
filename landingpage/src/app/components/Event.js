@@ -106,7 +106,7 @@ const AhimsaClassroom = () => {
               nonviolence, and holistic learning.
             </p>
             <a
-              href="mailto:swarnikarajsingh@gmail.com"
+              href="mailto:swarnnika.uddharini.org"
               className="inline-block px-6 py-3 bg-emerald-600 text-white rounded-full font-semibold text-sm shadow-md hover:bg-emerald-700 transition-all"
             >
               📩 Contact Us
