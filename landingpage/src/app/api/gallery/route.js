@@ -30,7 +30,7 @@ export async function GET(req) {
       .filter((file) =>
         supportedExts.some((ext) => file.name.toLowerCase().endsWith(ext))
       )
-      .map((file, index) => {
+      ?.map((file, index) => {
         const ext = file.name.split(".").pop().toLowerCase();
         const type = ["mp4", "mov", "webm"].includes(ext) ? "video" : "image";
 

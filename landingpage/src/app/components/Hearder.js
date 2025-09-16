@@ -47,7 +47,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="desktop-nav">
-            {navItems.map((item, idx) => (
+            {navItems?.map((item, idx) => (
               <a key={idx} href={item.href} className="nav-link">
                 {item.label}
               </a>
@@ -73,7 +73,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div className={`mobile-nav ${isMenuOpen ? "open" : ""}`}>
           <div className="mobile-nav-content">
-            {navItems.map((item, idx) => (
+            {navItems?.map((item, idx) => (
               <a
                 key={idx}
                 href={item.href}

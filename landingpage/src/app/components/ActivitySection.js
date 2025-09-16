@@ -108,7 +108,7 @@ const ActivitySection = () => {
 
         {/* Initiatives Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 mb-16">
-          {initiatives.map((initiative, index) => {
+          {initiatives?.map((initiative, index) => {
             const IconComponent = initiative.icon;
             return (
               <div

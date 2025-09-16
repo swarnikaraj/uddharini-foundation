@@ -138,7 +138,7 @@ const SnakeRoadmap = () => {
           </svg>
 
           {/* Level Cards */}
-          {levels.map((level, idx) => (
+          {levels?.map((level, idx) => (
             <div
               key={idx}
               className={`absolute transform lg:-translate-x-1/2 lg:-translate-y-1/2 level-card ${

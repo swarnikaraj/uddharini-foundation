@@ -99,7 +99,7 @@ const Gallery = () => {
 
         {/* Grid */}
         <div className="pinterest-grid">
-          {items.map((item) => (
+          {items?.map((item) => (
             <div
               key={item.id}
               className="gallery-card"

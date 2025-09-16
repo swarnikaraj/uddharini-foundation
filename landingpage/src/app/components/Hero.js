@@ -79,7 +79,7 @@ const HeroSection = () => {
       <div className="hero-background">
         <div className="bg-gradient"></div>
         <div className="floating-shapes">
-          {floatingPositions.map((position, i) => (
+          {floatingPositions?.map((position, i) => (
             <div
               key={i}
               className={`floating-shape shape-${i + 1}`}

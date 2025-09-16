@@ -88,7 +88,7 @@ const ActsOfKindnessChallenge = () => {
 
         {/* Mobile-First Challenge Cards */}
         <div className="space-y-4 md:space-y-6">
-          {challenges.map((challenge, idx) => (
+          {challenges?.map((challenge, idx) => (
             <div
               key={idx}
               className={`challenge-card ${challenge.color} ${
