@@ -11,7 +11,7 @@ const Gallery = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [selectedItem, setSelectedItem] = useState(null);
   const [paginationType, setPaginationType] = useState("loadmore"); // 'pages' or 'loadmore'
-  const itemsPerPage = 8;
+  const itemsPerPage = 32;
 
   useEffect(() => {
     fetchItems(currentPage);
