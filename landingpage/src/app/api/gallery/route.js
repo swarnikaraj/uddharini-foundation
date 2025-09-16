@@ -49,8 +49,8 @@ export async function GET(req) {
 
     return NextResponse.json({
       items: paginatedItems,
-      totalItems: items.length,
-      totalPages: Math.ceil(items.length / limit),
+      totalItems: items?.length,
+      totalPages: Math.ceil(items?.length / limit),
     });
   } catch (err) {
     console.error("Error fetching GCP files:", err);

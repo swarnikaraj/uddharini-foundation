@@ -39,7 +39,7 @@ const HeroSection = () => {
 
     // Rotate kindness words
     const interval = setInterval(() => {
-      setCurrentWord((prev) => (prev + 1) % kindnessWords.length);
+      setCurrentWord((prev) => (prev + 1) % kindnessWords?.length);
     }, 2000);
 
     return () => clearInterval(interval);
@@ -89,7 +89,7 @@ const HeroSection = () => {
                 top: position.top,
               }}
             >
-              {floatingEmojis[i % floatingEmojis.length]}
+              {floatingEmojis[i % floatingEmojis?.length]}
             </div>
           ))}
         </div>

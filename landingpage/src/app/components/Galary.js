@@ -65,9 +65,9 @@ const Gallery = () => {
     let newIndex;
 
     if (direction === "next") {
-      newIndex = currentIndex < items.length - 1 ? currentIndex + 1 : 0;
+      newIndex = currentIndex < items?.length - 1 ? currentIndex + 1 : 0;
     } else {
-      newIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+      newIndex = currentIndex > 0 ? currentIndex - 1 : items?.length - 1;
     }
 
     setSelectedItem(items[newIndex]);
@@ -92,7 +92,7 @@ const Gallery = () => {
             <span className="stat-label">Page</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">{items.length}</span>
+            <span className="stat-number">{items?.length}</span>
             <span className="stat-label">Showing</span>
           </div>
         </div>
@@ -138,13 +138,13 @@ const Gallery = () => {
             >
               {loading
                 ? "Loading..."
-                : `Load More (${totalItems - items.length} remaining)`}
+                : `Load More (${totalItems - items?.length} remaining)`}
             </button>
           </div>
         )}
 
         {/* Loader */}
-        {loading && items.length === 0 && (
+        {loading && items?.length === 0 && (
           <div className="loading-grid">
             {[...Array(itemsPerPage)].map((_, i) => (
               <div key={i} className="skeleton-card">
