@@ -98,3 +98,87 @@
     padding: 16px;
   }
 }
+
+/* Default */
+.level-content {
+  width: 280px;
+  padding: 24px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .level-content {
+    width: 220px;
+    padding: 18px;
+  }
+}
+
+/* Mobile - switch to vertical stack */
+@media (max-width: 480px) {
+  .relative.w-full.h-\[600px\] {
+    height: auto; /* let it expand */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  svg {
+    display: none; /* hide snake on tiny screens if it's cramped */
+  }
+
+  .level-card {
+    position: static !important; /* stack naturally */
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .level-content {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* Desktop / Tablet (default) */
+.snake-container {
+  position: relative;
+  height: 600px;
+}
+.cards-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.level-card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile: stacked layout */
+@media (max-width: 768px) {
+  .snake-container {
+    height: auto;
+  }
+
+  .snake-container svg {
+    display: none; /* hide snake */
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: static;
+  }
+
+  .level-card {
+    position: static;
+    transform: none;
+    opacity: 1 !important;
+  }
+
+  .level-content {
+    width: 100%;
+    max-width: 300px;
+  }
+}

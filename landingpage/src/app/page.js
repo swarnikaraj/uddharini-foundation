@@ -8,7 +8,7 @@ import ActivitySection from "./components/ActivitySection";
 import RescueStoriesSection from "./components/RescueStory";
 import LevelRoadmap from "./components/Roadmap";
 import AhimsaClassroom from "./components/Event";
-
+import Gallery from "./components/Galary";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -20,7 +20,7 @@ export default function Home() {
       {/* <DonateSection /> */}
       <ActivitySection />
       {/* <ImpactSection /> */}
-      {/* <Gallery /> */}
+      <Gallery />
       <ContactSection />
     </div>
   );

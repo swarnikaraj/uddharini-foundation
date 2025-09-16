@@ -14,33 +14,31 @@ const levels = [
     icon: <FaLeaf className="text-green-600 text-3xl" />,
     title: "Join the Challenge",
     description: "Sign up and commit to spreading kindness this summer.",
-    position: { x: 50, y: 50 },
+    position: { x: 20, y: 10 }, // percentage of 500
   },
   {
     icon: <FaHandsHelping className="text-yellow-600 text-3xl" />,
     title: "Acts of Kindness",
-    description:
-      "Serve water, feed animals, plant a tree, or help someone in need.",
-    position: { x: 350, y: 150 },
+    description: "Serve water, feed animals, plant a tree, or help someone.",
+    position: { x: 70, y: 30 },
   },
   {
     icon: <FaCamera className="text-blue-600 text-3xl" />,
     title: "Capture the Moment",
     description: "Take photos or videos of your kind acts and share them.",
-    position: { x: 50, y: 250 },
+    position: { x: 20, y: 50 },
   },
   {
     icon: <FaGift className="text-pink-600 text-3xl" />,
     title: "Claim Your Reward",
-    description:
-      "Submit your entries to earn certificates, books, t-shirts, and more.",
-    position: { x: 350, y: 350 },
+    description: "Submit your entries to earn certificates, books, and more.",
+    position: { x: 70, y: 70 },
   },
   {
     icon: <FaTrophy className="text-orange-600 text-3xl" />,
     title: "Celebrate & Inspire",
-    description: "Winners are announced, and everyone receives a certificate.",
-    position: { x: 200, y: 450 },
+    description: "Winners are announced, everyone receives a certificate.",
+    position: { x: 40, y: 90 },
   },
 ];
 
@@ -143,12 +141,16 @@ const SnakeRoadmap = () => {
           {levels.map((level, idx) => (
             <div
               key={idx}
-              className={`absolute transform -translate-x-1/2 -translate-y-1/2 level-card ${
+              className={`absolute transform lg:-translate-x-1/2 lg:-translate-y-1/2 level-card ${
                 visibleLevels.includes(idx) ? "visible" : ""
               }`}
+              // style={{
+              //   left: `${(level.position.x / 500) * 100}%`,
+              //   top: `${(level.position.y / 500) * 100}%`,
+              // }}
               style={{
-                left: `${(level.position.x / 500) * 100}%`,
-                top: `${(level.position.y / 500) * 100}%`,
+                left: `${level.position.x}%`,
+                top: `${level.position.y}%`,
               }}
             >
               {/* Level number badge */}

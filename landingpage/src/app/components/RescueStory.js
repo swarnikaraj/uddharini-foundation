@@ -78,7 +78,7 @@ const ActsOfKindnessChallenge = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-3">
-            🌟 Summer Kindness Quest 🌟
+            🌟Kindness Quest 🌟
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed">
             Join fun challenges, help animals and nature, and win cool prizes!

@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "instagram.com",
       },
+      {
+        protocol: "https",
+        hostname: "storage.googleapis.com",
+      },
     ],
   },
 };

@@ -30,7 +30,7 @@ const programSteps = [
   },
   {
     icon: <FaGift className="text-pink-600 text-3xl" />,
-    title: "Prize for Top 3",
+    title: "Prize for Top 5",
     description:
       "Winners are selected based on their responses and participation.",
   },
