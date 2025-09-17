@@ -15,8 +15,8 @@ export default function Home() {
       <HeroSection />
       <MissionSection />
       <AhimsaClassroom />
-      <RescueStoriesSection />
-      <LevelRoadmap />
+      {/* <RescueStoriesSection /> */}
+      {/* <LevelRoadmap /> */}
       {/* <DonateSection /> */}
       <ActivitySection />
       {/* <ImpactSection /> */}
